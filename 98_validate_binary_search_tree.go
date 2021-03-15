@@ -24,11 +24,7 @@ func isValidBST(root *TreeNode) bool {
 		} else {
 			stack = append(stack, check)
 
-			if check.Left != nil {
-				check = check.Left
-			} else {
-				check = nil
-			}
+			check = check.Left
 		}
 	}
 
